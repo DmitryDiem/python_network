@@ -3,7 +3,7 @@ import sys
 
 ssh = paramiko.SSHClient()
 ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
-ssh.connect('###', username='###', password='###')
+ssh.connect('ip###', username='uname###', password='pass###')
 
 stdin, stdout, stderr = ssh.exec_command("get system status")
 type(stdin)
